@@ -7,49 +7,53 @@ https://github.com/OSPanel/OpenServerPanel
 [Документация](https://github.com/OSPanel/OpenServerPanel/wiki)
 
 Интерфейс командной строки:
-```
-# Выключаем всё
-osp off all
 
-# Переходим в папку
-cd home
+# Основные команды
 
-# Создаём папку
-mkdir first-test.local
+## Выключаем всё
+```osp off all```
 
-# Переходим в папку
-cd first-test.local
+## Переходим в папку
+```cd home```
 
-# Создаём папку
-mkdir .osp
+## Создаём папку
+```mkdir first-test.local```
 
-# Переходим в папку
-cd .osp
+## Переходим в папку
+```cd first-test.local```
 
-# Создаём файл и вписываем значение
-echo ^[first-test.local^] > project.ini
+## Создаём папку
+```mkdir .osp```
 
-# Смотрим статус всех модулей
-osp status
+## Переходим в папку
+```cd .osp```
 
-# Смотрим статус конкретного модуля
-osp status PHP-8.1
+## Создаём файл и вписываем значение
+```echo ^[first-test.local^] > project.ini```
 
-# Включаем модуль
-osp on php-8.1
+## Смотрим статус всех модулей
+```osp status```
 
-# Проверяем
-osp status PHP-8.1
+## Смотрим статус конкретного модуля
+```osp status PHP-8.1```
 
-# Перезапускаем программу
-osp exit & ospanel
+## Включаем модуль
+```osp on php-8.1```
 
-# Применить модуль
-osp use php-8.1
+## Проверяем
+```osp status PHP-8.1```
 
-# Сгенерирует SSL-сертификат
-osp cacert init
+## Перезапускаем программу
+```osp exit & ospanel```
 
-# Выполнит подготовку системы
-osp sysprep
-```
+## Применить модуль
+```osp use php-8.1```
+
+## Сгенерирует SSL-сертификат
+```osp cacert init```
+
+## Выполнит подготовку системы
+```osp sysprep```
+
+## Сбросить и добавить
+```osp reset & osp add bind```
